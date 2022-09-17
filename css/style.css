@@ -1,0 +1,94 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.t{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin: auto;
+    background: red;
+    color: #fff;
+    display: inline-block;
+}
+.contenedor{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+table{
+    width: 100%;
+    margin: auto;
+    width: 70%;
+}
+.tablaPar{
+    position: relative;
+    left: 30%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 1em;
+    margin: 0;
+}
+.contenedor tr td a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.city{
+    position: relative;
+}
+.city::before{
+    content: '';
+    position: absolute;
+    background: rgb(0, 0, 0);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 37%;
+}
+.contenedor .img{
+    position: absolute;
+    background: #00000023;
+    right: 0;
+    width: 30%;
+    top: 13.7%;
+    height: 90%;
+}
+.contenedor.l .img{
+    left: 0;
+    width: 30%;
+    top: 20%;
+    height: 86%;
+}
+.contenedor .img img{
+    width: 100%;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0,0,0,0.3); */
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+@media (max-width: 30em) {
+    body{
+        overflow-x: scroll;
+    }
+    .contenedor .img{
+        display: none;
+    } 
+    .tablaPar{
+        left: 0;
+    }  
+    table tbody tr{
+        width: 100%;
+    }
+}
